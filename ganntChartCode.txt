@@ -1,0 +1,76 @@
+Author: Bartek Grudzinski
+Date: 30/11/2022
+Website Used: https://www.planttext.com/
+
+Code:
+@startgantt
+Project starts  2022-11-07
+[temp] starts 2022-11-07
+[temp] ends 2023-02-01
+
+[Team Meetup] on {Team} starts 2022-11-07
+[Team Meetup] ends 2022-11-13
+
+[Interview Prep] starts 2022-11-14
+[Interview Prep] ends 2022-11-20
+
+[Conduct Interview] on {Team} starts at [Interview Prep]'s end
+[Conduct Interview] starts 2022-11-21
+[Conduct Interview] ends 2022-11-21
+
+[Assign Workload] on {Team} starts at [Conduct Interview]'s end
+[Assign Workload] ends 2022-11-27
+
+[Gannt Chart] on {Bartek} starts at [Assign Workload]'s start
+[Gannt Chart] starts 2022-11-23
+[Gannt Chart] ends 2022-11-31
+
+[Gannt Chart] on {Bartek} starts at [Assign Workload]'s start
+[Gannt Chart] lasts 7 days
+[Gannt Chart] starts 2022-11-23
+
+[Architecture Plan] on {Tommy} {Nathan} starts at [Assign Workload]'s start
+[Architecture Plan] starts 2022-11-23
+[Architecture Plan] ends 2022-11-29
+
+[Website Draft] on {Davron} starts at [Assign Workload]'s start
+[Website Draft] starts 2022-11-23
+[Website Draft] ends 2022-11-29
+
+[Update Risk Requirements] on {Megan}{Tommy}{Bartek} starts at [Assign Workload]'s start
+[Update Risk Requirements] starts 2022-11-23
+[Update Risk Requirements] ends 2022-11-29
+
+[Start Risk Assessment] on {Megan} starts at [Assign Workload]'s start
+[Start Risk Assessment] starts 2022-11-23
+[Start Risk Assessment] ends 2022-11-29
+
+[Software Justification] on {Lauren} starts at [Assign Workload]'s start
+[Software Justification] starts 2022-11-23
+[Software Justification] ends 2022-11-29
+
+[Libgdx Familiarization] on {Team} starts at [Assign Workload]'s start
+[Libgdx Familiarization] starts 2022-11-23
+[Libgdx Familiarization] ends 2022-12-06
+
+[Condense User Requirements] on {Megan} starts at [Update Risk Requirements]'s end
+[Condense User Requirements] ends 2022-12-04
+
+[Finish Risk Register] on {Megan} starts at [Start Risk Assessment]'s end
+[Finish Risk Register] ends 2022-12-04
+
+[Update Non/Functional Requirements] on {Tommy}{Bartek} starts at [Update Risk Requirements]'s end
+[Update Non/Functional Requirements] ends 2022-12-04
+
+[Start UML Diagrams] on {Nathan} starts at [Architecture Plan]'s end
+[Start UML Diagrams] ends 2022-12-04
+
+[Finish Website and Upload to GitHub] on {Davron} starts at [Website Draft]'s end
+[Finish Website and Upload to GitHub] ends 2022-12-04
+
+[Write Risk Management Process] on {Davron} starts at [Website Draft]'s end
+[Write Risk Management Process] ends 2022-12-04
+
+[Finish Gannt Chart] on {Bartek} starts at [Gannt Chart]'s end
+[Finish Gannt Chart] ends 2022-12-04
+@endgantt

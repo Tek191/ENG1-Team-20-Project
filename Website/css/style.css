@@ -1,0 +1,69 @@
+nav {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    left: 0;
+    border-bottom: thin solid #fff;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-item {
+    width: calc(100% / 8); /* 8 is the number of buttons */
+    height: 50px; /* or any other value you prefer */
+}
+
+.sidebar {
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 50px; /* the height of the topbar */
+    height: calc(100vh - 50px); /* the full vertical length of the page minus the size of the topbar */
+    width: 200px; /* or any other width you prefer */
+    border-top: thin solid #fff;
+}
+
+.main-content {
+    margin-left: 200px; /* or the width of your sidebar */
+    position: absolute;
+    top: 200px; /* the height of the topbar */
+    right: 0;
+    bottom: 0;
+    left: 200px; /* or the width of your sidebar */
+    z-index: 1;
+}
+
+.sidebar-button {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    margin-bottom: 10px;
+}
+.sidebar-button:hover {
+    background-color: #ddd;
+    color: black;
+}

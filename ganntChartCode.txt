@@ -1,12 +1,7 @@
-Author: Bartek Grudzinski
-Date: 30/11/2022
-Website Used: https://www.planttext.com/
-
-Code:
 @startgantt
 Project starts  2022-11-07
-[temp] starts 2022-11-07
-[temp] ends 2023-02-01
+[.] starts 2022-11-07
+[.] ends 2023-02-01
 
 [Team Meetup] on {Team} starts 2022-11-07
 [Team Meetup] ends 2022-11-13
@@ -73,4 +68,43 @@ Project starts  2022-11-07
 
 [Finish Gannt Chart] on {Bartek} starts at [Gannt Chart]'s end
 [Finish Gannt Chart] ends 2022-12-04
+
+[Finish UML Diagram] on {Nathan} starts at [Start UML Diagrams]'s end
+[Finish UML Diagram] ends 2022-12-18
+
+[Finish Risk Register 2] on {Megan} starts at [Finish Risk Register]'s end
+[Finish Risk Register 2] ends 2022-12-18
+
+[HOLIDAY] on {Team} starts at [Finish UML Diagram]'s end
+[HOLIDAY] ends 2023-01-08
+
+[EXAMS] on {Team} starts at [HOLIDAY]'s end
+[EXAMS] ends 2023-01-15
+
+[Game Main Menu] on {Lauren} starts at [EXAMS]'s end
+[Game Main Menu] ends 2023-01-22
+
+[Intro to Risk Management] on {Megan} starts at [EXAMS]'s end
+[Intro to Risk Management] ends 2023-01-22
+
+[Intro to Requirements] on {Megan} starts at [EXAMS]'s end
+[Intro to Requirements] ends 2023-01-22
+
+[Condense Requirements] on {Megan} starts at [EXAMS]'s end
+[Condense Requirements] ends 2023-01-22
+
+[Find Game Assets] on {Tommy} starts at [EXAMS]'s end
+[Find Game Assets] ends 2023-01-22
+
+[Research Website Requirements] on {Bartek} starts at [EXAMS]'s end
+[Research Website Requirements] ends 2023-01-22
+
+[Help with Website] on {Bartek} starts at [EXAMS]'s end
+[Help with Website] ends 2023-01-22
+
+[UML Behavioural Diagrams] on {Nathan} starts at [EXAMS]'s end
+[UML Behavioural Diagrams] ends 2023-01-22
+
+[Core Game Code] on {Davron} starts at [EXAMS]'s end
+[Core Game Code] ends 2023-01-22
 @endgantt

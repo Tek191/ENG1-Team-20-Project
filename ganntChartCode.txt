@@ -107,4 +107,49 @@ Project starts  2022-11-07
 
 [Core Game Code] on {Davron} starts at [EXAMS]'s end
 [Core Game Code] ends 2023-01-22
+
+[Create Pantry Map] on {Tommy} starts at [Find Game Assets]'s end
+[Create Pantry Map] ends 2023-01-27
+
+[Create images for ingredients] on {Tommy} starts at [Find Game Assets]'s end
+[Create images for ingredients] ends 2023-01-27
+
+[Create images for customers] on {Tommy} starts at [Find Game Assets]'s end
+[Create images for customers] ends 2023-01-27
+
+[Continue with implementation] on {Davron} starts at [Core Game Code]'s end
+[Continue with implementation] ends 2023-01-27
+
+[Continue with UML Diagrams] on {Nathan} starts at [UML Behavioural Diagrams]'s end
+[Continue with UML Diagrams] ends 2023-01-27
+
+[Proofread Architecture] on {Megan} starts at [Condense Requirements]'s end
+[Proofread Architecture] ends 2023-01-27
+
+[Update Gannt Chart] on {Bartek} starts at [Help with Website]'s end
+[Update Gannt Chart] ends 2023-01-27
+
+[Write up Method Selection and Planning] on {Bartek} starts at [Help with Website]'s end
+[Write up Method Selection and Planning] ends 2023-01-27
+
+[Proofread 1.4] on {Megan} starts at [Proofread Architecture]'s end
+[Proofread 1.4] ends 2023-02-01
+
+[Finish 3a Architecture] on {Nathan} starts at [Continue with UML Diagrams]'s end
+[Finish 3a Architecture] ends 2023-02-01
+
+[Finish 1.4] on {Bartek} starts at [Write up Method Selection and Planning]'s end
+[Finish 1.4] ends 2023-02-01
+
+[Compile Gannt Charts] on {Bartek} starts at [Write up Method Selection and Planning]'s end
+[Compile Gannt Charts] ends 2023-02-01
+
+[Write up Architecture] on {Tommy} starts at [Create images for customers]'s end
+[Write up Architecture] ends 2023-02-01
+
+[Research overlay in game] on {Lauren} starts at [Create images for customers]'s end
+[Research overlay in game] ends 2023-02-01
+
+[Compile game implementation] on {Lauren}{Davron} starts at [Continue with implementation]'s end
+[Compile game implementation] ends 2023-02-01
 @endgantt

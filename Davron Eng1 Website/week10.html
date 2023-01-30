@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+
+body {
+  background-image: url("background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'New Super Mario Font U', sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-image: url("Wood_Wall.png");
+  background-repeat: repeat; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.image-container{
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding-top: 50px;
+}
+.image{
+    max-width: 80%; 
+    max-height: 80%;
+    width: auto; 
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="Davron_Website.html">Home</a>
+  <a href="#" onclick="window.open('https://docs.google.com/document/d/1ThvnhCIwMLZG13tEi177sZD8pl4vB469OBYJhKcVHbc/edit?usp=sharing', '_blank');">Requirements</a>
+  <a href="https://docs.google.com/document/d/1opw8xoInL5fbg33jt19winVnB4q4qBUdLV_0O_duVwI/edit?usp=sharing" target="_blank">Architecture</a>
+  <a href="https://docs.google.com/document/d/1ycADVybTlxS8VJ6bQG9Y7H06MeuGGb697nM-bssgZVU/edit?usp=sharing" target="_blank">Method Selection and Planning</a>
+  <a href="https://docs.google.com/document/d/1wqgjMQUptAvTISqgP_r3UbBhPyXpr4uDp8Cnx3S7rhQ/edit?usp=sharing" target="_blank">Risk Assessment and Mitigation</a>
+  <a href="https://docs.google.com/document/d/1IGFiJPL0VhJii_qmxbhS0wNSCSmTIbOLi7vvTOunpbU/edit?usp=sharing" target="_blank">Implementation</a>
+  <a href="https://github.com/Tek191/ENG1-Team-20-Project" target="_blank">Github</a>
+  <div class="subnav">
+    <button class="subnavbtn">Weeks <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="week1.html">Week 4</a>
+      <a href="week2.html">Week 5</a>
+      <a href="week3.html">Week 6</a>
+      <a href="week4.html">Week 7</a>
+      <a href="week5.html">Week 8</a>
+      <a href="week6.html">Week 9</a>
+      <a href="week7.html">Week 10</a>
+      <a href="week8.html">Week 11</a>
+      <a href="week9.html">Week 12</a>
+      <a href="week10.html">Week 13</a>
+    </div>
+  </div>
+</div>
+<div class="image-container">
+    <img class="image" src="Week13Frame.JPEG" alt="your-image-description">
+</div>
+</body>
+</html>

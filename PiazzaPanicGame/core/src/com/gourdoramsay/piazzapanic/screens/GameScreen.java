@@ -55,12 +55,14 @@ public class GameScreen implements Screen {
         newStage = new Stage();
         Gdx.input.setInputProcessor(newStage);
 
-
+        //Rendering in the game TileMap
         mapLoader = new TmxMapLoader();
         map = mapLoader.load("tilemap.tmx");
         mapRenderer = new OrthogonalTiledMapRenderer(map);
-
+        //Setting the map position, so it renders in the correct place in the screen
         gameCam.position.set(gamePort.getWorldWidth()/2 , gamePort.getWorldHeight()/2, 0);
+
+        //Creates instances to represent chef and their texture
         chef1Image = new Texture(Gdx.files.internal("characters/chefI.png"));
         chef2Image = new Texture(Gdx.files.internal("characters/chef2I.png"));
         chef1 = new Rectangle();
@@ -70,18 +72,24 @@ public class GameScreen implements Screen {
         chef1.width = 32;
         chef1.height = 32;
 
+        //Sets initial position of chefs
         chef2.x = PiazzaPanic.V_WIDTH / 2 + 32 / 2;
         chef2.y = PiazzaPanic.V_HEIGHT / 2 + 32 /2;
         chef2.width = 32;
         chef2.height = 32;
+        //Default chef is chef1
         currentChef = chef1;
     }
 
 
     public void handleInput(float dt) {
+        /** Method containing all logic related to user input in the game screen
+         * @param dt - represents DeltaTime in the game
+         */
+
+        //Allows for switching between chefs
         if(Gdx.input.isKeyPressed(Input.Keys.NUM_1)) currentChef = chef1;
         if(Gdx.input.isKeyPressed(Input.Keys.NUM_2)) currentChef = chef2;
-
 
         //Logic to make the chef move
         if(Gdx.input.isKeyPressed(Input.Keys.A)) currentChef.x -= 200 * Gdx.graphics.getDeltaTime();
@@ -93,11 +101,13 @@ public class GameScreen implements Screen {
         if(currentChef.x > gamePort.getScreenWidth()) currentChef.x = gamePort.getScreenWidth();
         if(currentChef.y < 0) currentChef.y = 0;
         if(currentChef.y > gamePort.getScreenHeight() -32) currentChef.y = gamePort.getScreenHeight() - 32;
-
     }
 
 
     public void update(float dt) {
+        /** Updates the game screen every frame
+         * @param dt - represents DeltaTime in the game
+         */
         handleInput(dt);
         gameCam.update();
         mapRenderer.setView(gameCam);
@@ -106,7 +116,6 @@ public class GameScreen implements Screen {
 
     @Override
     public void show() {
-
     }
 
     @Override
@@ -115,8 +124,6 @@ public class GameScreen implements Screen {
         Gdx.gl.glClearColor(0,0,0,1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         //Renders map to screen
-        ///game.batch.setProjectionMatrix(hud.stage.getCamera().combined);
-        //hud.stage.draw();
         mapRenderer.render();
 
         //Draws chef image to screen

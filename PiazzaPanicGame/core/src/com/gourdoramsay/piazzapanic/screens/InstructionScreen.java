@@ -60,7 +60,7 @@ public class InstructionScreen implements Screen {
         Gdx.gl.glClearColor(0f, 0f, 0f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        instructionTexture = new Texture(Gdx.files.internal("TileMap.png"));
+        instructionTexture = new Texture(Gdx.files.internal("instructions.png"));
         spriteBatch.begin();
         spriteBatch.draw(instructionTexture, 0 , 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         spriteBatch.end();
@@ -93,6 +93,7 @@ public class InstructionScreen implements Screen {
 
     @Override
     public void dispose() {
+        /** Garbage collection */
         spriteBatch.dispose();
         instructionTexture.dispose();
         stage.dispose();

@@ -105,7 +105,7 @@ public class MainMenu implements Screen {
 
     @Override
     public void resize(int width, int height) {
-        // change the stage's viewport when teh screen size is changed
+        // change the stage's viewport when the screen size is changed
         stage.getViewport().update(width, height, true);
 
     }

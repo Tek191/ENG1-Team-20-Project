@@ -19,6 +19,7 @@ import com.gourdoramsay.piazzapanic.PiazzaPanic;
 import com.gourdoramsay.piazzapanic.scenes.Hud;
 import org.w3c.dom.Text;
 
+import javax.naming.spi.StateFactory;
 import javax.swing.text.View;
 
 public class GameScreen implements Screen {
@@ -28,7 +29,7 @@ public class GameScreen implements Screen {
     private OrthographicCamera gameCam;
     private Viewport gamePort;
 
-    private Hud hud;
+    //private Hud hud;
 
     private TmxMapLoader mapLoader;
     private TiledMap map;
@@ -43,13 +44,16 @@ public class GameScreen implements Screen {
 
     private Rectangle currentChef;
 
+    private Stage newStage;
+
     public GameScreen(PiazzaPanic game) {
         this.game = game;
         gameCam = new OrthographicCamera();
         gamePort = new FitViewport(PiazzaPanic.V_WIDTH, PiazzaPanic.V_HEIGHT, gameCam);
-        hud = new Hud(game.batch);
+        //hud = new Hud(game.batch);
         sbatch = new SpriteBatch();
-        Gdx.input.setInputProcessor(new Stage());
+        newStage = new Stage();
+        Gdx.input.setInputProcessor(newStage);
 
 
         mapLoader = new TmxMapLoader();
@@ -111,8 +115,8 @@ public class GameScreen implements Screen {
         Gdx.gl.glClearColor(0,0,0,1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         //Renders map to screen
-        game.batch.setProjectionMatrix(hud.stage.getCamera().combined);
-        hud.stage.draw();
+        ///game.batch.setProjectionMatrix(hud.stage.getCamera().combined);
+        //hud.stage.draw();
         mapRenderer.render();
 
         //Draws chef image to screen
@@ -150,5 +154,6 @@ public class GameScreen implements Screen {
         sbatch.dispose();
         map.dispose();
         mapRenderer.dispose();
+        newStage.dispose();
     }
 }
